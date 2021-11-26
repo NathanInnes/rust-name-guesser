@@ -5,7 +5,7 @@ fn main() {
     println!("Guess the name");
 
     let names: Vec<&str> = vec!["Erick", "Sabes", "Holland", "Falcon"];
-    let name_value = names[(rand::thread_rng().gen_range(0..names.len()))];
+    let name_value: &str = names[(rand::thread_rng().gen_range(0..names.len()))];
 
     loop {
         let mut guess: String = String::new();
